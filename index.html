@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMAJI Coffee.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
@@ -26,8 +31,8 @@
             </nav>
 
             <div class="header__actions">
-                <button class="btn btn--small">Cart</button>
-                <button class="btn btn--small btn--outline">Sign In</button>
+                <button class="btn ">Cart (2)</button>
+                <button class="btn btn--outline">Sign In</button>
             </div>
         </div>
     </header>
@@ -64,7 +69,7 @@
                     <div class="filters__field filters__field--price">
                         <div class="filters__label-row">
                             <label for="price" class="filters__label">Price</label>
-                            <button class="filters__clear" type="button">Clear</button>
+                            <button class="filters__clear filters__clear--active" type="button">Clear</button>
                         </div>
 
                         <div class="filters__control">
@@ -79,7 +84,7 @@
                     <div class="filters__field filters__field--sort">
                         <div class="filters__label-row">
                             <label for="sort" class="filters__label">Sort By</label>
-                            <button class="filters__clear" type="button">Clear</button>
+                            <button class="filters__clear filters__clear--active" type="button">Clear</button>
                         </div>
 
                         <div class="filters__control">
@@ -288,7 +293,7 @@
         </div>
     </footer>
 
-    <!-- <script src="./js/main.js"></script> -->
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
