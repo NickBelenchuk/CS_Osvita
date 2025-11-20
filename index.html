@@ -13,12 +13,10 @@
     <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
-<body class="page">
-
+<body>
     <header class="header">
-        <div class="header__inner container">
+        <div class="container header__inner ">
             <a href="#" class="header__logo">IMAJI <span class="header__logo-accent">Coffee.</span></a>
-
             <nav class="header__nav nav" aria-label="Main navigation">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link nav__link--active" href="#">Home</a></li>
@@ -29,7 +27,6 @@
                     <li class="nav__item"><a class="nav__link" href="#">News</a></li>
                 </ul>
             </nav>
-
             <div class="header__actions">
                 <button class="btn ">Cart (2)</button>
                 <button class="btn btn--outline">Sign In</button>
@@ -39,20 +36,32 @@
 
     <main class="main">
         <section class="hero">
-            <div class="hero__inner container">
-                <h1 class="hero__title">Our Menu</h1>
-                <p class="hero__subtitle">
-                    IMAJI Coffee provides a variety of high quality coffee and drinks and flavors<br>
-                    that are suitable for you to support and cheer up your day. We also provide<br>
-                    coffee to accompany you at home along with the equipment.
-                </p>
+            <div class="container hero__inner ">
+                <div class="hero__content">
+                    <h1 class="hero__title">Our Menu</h1>
+                    <p class="hero__subtitle">
+                        IMAJI Coffee provides a variety of high quality coffee and drinks and flavors that are suitable
+                        for you to support and cheer up your day. We also provide coffee to accompany you at home along
+                        with the equipment.
+                    </p>
+                </div>
+                <aside class="hero__delivery" aria-label="Delivery order apps">
+                    <p class="hero__delivery-title">Delivery Order</p>
+
+                    <a href="#" class="hero__store">
+                        <img src="img/appstore.png" alt="Download on the App Store">
+                    </a>
+
+                    <a href="#" class="hero__store">
+                        <img src="img/googleplay.png" alt="Get it on Google Play">
+                    </a>
+                </aside>
             </div>
         </section>
 
         <section class="filters">
-            <div class="filters__inner container">
+            <div class="container filters__inner ">
                 <form class="filters__form" action="#" method="get">
-
                     <div class="filters__field filters__field--search">
                         <div class="filters__label-row">
                             <label for="search" class="filters__label">Search</label>
@@ -97,23 +106,22 @@
                     </div>
 
                 </form>
-
-                <div class="filters__categories" aria-label="Menu categories">
-                    <button class="filters__category filters__category--active" type="button">
-                        Coffee and Beverage
-                    </button>
-                    <button class="filters__category" type="button">
-                        Food and Snack
-                    </button>
-                    <button class="filters__category" type="button">
-                        IMAJI Coffee at Home
-                    </button>
-                </div>
+            </div>
+            <div class="container filters__categories" aria-label="Menu categories">
+                <button class="filters__category filters__category--active" type="button">
+                    Coffee and Beverage
+                </button>
+                <button class="filters__category" type="button">
+                    Food and Snack
+                </button>
+                <button class="filters__category" type="button">
+                    IMAJI Coffee at Home
+                </button>
             </div>
         </section>
 
         <section class="products">
-            <div class="products__inner container">
+            <div class="container products__inner ">
                 <div class="products__grid">
                     <article class="product-card product-card--sale">
                         <div class="product-card__badge">Sale</div>
@@ -267,29 +275,56 @@
         </section>
 
         <section class="location">
-            <div class="location__inner container">
+            <div class="container location__inner ">
                 <h2 class="location__title">Our Location</h2>
                 <p class="location__address">
                     Jl. Bengkingan No 19, RT.11/RW.2, Kota Surabaya, 60124
                 </p>
                 <p class="location__contact">
-                    Customer Service: <a href="tel:+628233996682">+6282-3399-6682</a>
+                    Customer Service: <a href="tel:+628233996882">+6282-3399-6682</a>
                 </p>
                 <p class="location__hours">
-                    We Are Open From 8am – 10pm | Mon – Sun
+                    <span>We Are Open from</span> Sun – Mon 10 AM – 22 PM
                 </p>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="footer__inner container">
-            <p class="footer__copy">© 2023 IMAJI COFFEE. All rights reserved.</p>
-            <p class="footer__links">
-                <a href="#">Terms and Conditions</a>
-                <span class="footer__divider">|</span>
-                <a href="#">Privacy Policy</a>
-            </p>
+        <div class="container footer__inner">
+
+            <div class="location__bottom">
+                <div class="location__socials">
+                    <a href="#" class="location__social"><img src="img/icons/spotify.svg" alt="Spotify"></a>
+                    <a href="#" class="location__social"><img src="img/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#" class="location__social"><img src="img/icons/tiktok.svg" alt="TikTok"></a>
+                    <a href="#" class="location__social"><img src="img/icons/youtube.svg" alt="YouTube"></a>
+                    <a href="#" class="location__social"><img src="img/icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#" class="location__social"><img src="img/icons/telegram.svg" alt="Telegram"></a>
+                </div>
+
+                <div class="location__apps">
+                    <span class="location__delivery">Delivery Order</span>
+                    <div class="location__stores">
+                        <a href="#" class="location__store">
+                            <img src="img/appstore.png" alt="App Store">
+                        </a>
+                        <a href="#" class="location__store">
+                            <img src="img/googleplay.png" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bar">
+                <p class="footer__copy">© 2023 IMAJI COFFEE, All rights reserved</p>
+                <p class="footer__links">
+                    <a href="#">Terms and Conditions</a>
+                    <span class="footer__divider">|</span>
+                    <a href="#">Privacy Policy</a>
+                </p>
+            </div>
+
         </div>
     </footer>
 
