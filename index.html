@@ -15,8 +15,11 @@
 
 <body>
     <header class="header">
-        <div class="container header__inner ">
-            <a href="#" class="header__logo">IMAJI <span class="header__logo-accent">Coffee.</span></a>
+        <div class="container header__inner">
+            <a href="#" class="header__logo">
+                IMAJI <span class="header__logo-accent">Coffee.</span>
+            </a>
+
             <nav class="header__nav nav" aria-label="Main navigation">
                 <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link nav__link--active" href="#">Home</a></li>
@@ -27,12 +30,25 @@
                     <li class="nav__item"><a class="nav__link" href="#">News</a></li>
                 </ul>
             </nav>
+
             <div class="header__actions">
-                <button class="btn ">Cart (2)</button>
-                <button class="btn btn--outline">Sign In</button>
+                <button class="header__cart" type="button" aria-label="Cart, 10 items">
+                    <span class="header__cart-icon" aria-hidden="true">🧺</span>
+                    <span class="header__cart-badge">10</span>
+                </button>
+
+                <button class="btn header__btn-cart">Cart (2)</button>
+                <button class="btn btn--outline header__btn-signin">Sign In</button>
+
+                <button class="header__burger" type="button" aria-label="Open navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>
+
 
     <main class="main">
         <section class="hero">
