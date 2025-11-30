@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__inner">
+            <a href="#" class="header__logo">
+                IMAJI <span class="header__logo-accent">Coffee.</span>
+            </a>
+
+            <nav class="header__nav nav" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link nav__link--active" href="#">Home</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Story</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Menu</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Space</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">Community</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#">News</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <button class="header__cart" type="button" aria-label="Cart, 10 items">
+                    <span class="header__cart-icon" aria-hidden="true">🧺</span>
+                    <span class="header__cart-badge">10</span>
+                </button>
+
+                <button class="btn header__btn-cart">Cart (2)</button>
+                <button class="btn btn--outline header__btn-signin">Sign In</button>
+
+                <button class="header__burger" type="button" aria-label="Open navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="product-detail">
+            <div class="container product-detail__inner">
+
+                <div class="product-detail__gallery">
+                    <div class="product-detail__thumbs">
+                        <button class="product-detail__thumb product-detail__thumb--active" type="button">
+                            <img src="../img/thumb-1.jpg" alt="At Home Classic main view">
+                        </button>
+                        <button class="product-detail__thumb" type="button">
+                            <img src="../img/thumb-2.jpg" alt="Serving suggestion 1">
+                        </button>
+                        <button class="product-detail__thumb" type="button">
+                            <img src="../img/thumb-3.jpg" alt="Serving suggestion 2">
+                        </button>
+                        <button class="product-detail__thumb" type="button">
+                            <img src="../img/thumb-4.jpg" alt="Brewing">
+                        </button>
+                    </div>
+
+                    <figure class="product-detail__preview">
+                        <img src="../img/main-card.jpg" alt="At Home – Classic coffee package">
+                    </figure>
+                </div>
+
+                <div class="product-detail__info">
+                    <nav class="breadcrumbs__nav" aria-label="Breadcrumb">
+                        <a href="#" class="breadcrumbs__link">Home</a>
+                        <span class="breadcrumbs__separator">›</span>
+                        <a href="#" class="breadcrumbs__link">Menu</a>
+                        <span class="breadcrumbs__separator">›</span>
+                        <span class="breadcrumbs__current">Detail</span>
+                    </nav>
+                    <h1 class="product-detail__title">At Home – Classic</h1>
+
+                    <div class="product-detail__price">
+                        <span class="product-detail__price-current">$4,00</span>
+                        <span class="product-detail__price-old">$5,00</span>
+                        <span class="product-detail__price-note">• Get 20% Off in App</span>
+                    </div>
+
+                    <div class="product-detail__section">
+                        <h2 class="product-detail__section-title">Description:</h2>
+                        <p class="product-detail__text">
+                            An all-time favorite blend with citrus fruit character, caramel flavor,
+                            and a pleasant faintly floral aroma. Locked savor.
+                        </p>
+                        <p class="product-detail__text">
+                            Excelsa prevents air from entering the packaging with a locked aroma,
+                            ensuring the coffee’s freshness.
+                        </p>
+                    </div>
+
+                    <div class="product-detail__section">
+                        <h3 class="product-detail__section-title">Storage Way:</h3>
+                        <p class="product-detail__text">
+                            To maintain the taste of coffee and the freshness of the aroma, store Excelsa coffee in
+                            an airtight,
+                            food-safe container.
+                        </p>
+                        <button class="product-detail__readmore" type="button">
+                            Read less
+                        </button>
+                    </div>
+
+                    <form class="product-detail__actions" action="#" method="post">
+                        <button class="btn product-detail__btn-add" type="submit">
+                            Add to Cart
+                        </button>
+
+                        <div class="product-detail__qty" aria-label="Quantity selector">
+                            <button class="product-detail__qty-btn" type="button"
+                                aria-label="Decrease quantity">−</button>
+                            <span class="product-detail__qty-value">1</span>
+                            <button class="product-detail__qty-btn" type="button"
+                                aria-label="Increase quantity">+</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="product-suggestions">
+            <div class="container product-suggestions__inner">
+                <h2 class="product-suggestions__title">You May Also Like</h2>
+
+                <div class="product-suggestions__grid">
+                    <article class="product-card product-card--sale">
+                        <div class="product-card__badge">Sale</div>
+                        <img src="../img/menu-1.jpg" alt="Ristretto Bianco" class="product-card__image">
+                        <h3 class="product-card__name">RISTRETTO BIANCO</h3>
+                        <p class="product-card__tagline">Only at Cafe and Delivery</p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$5.00</span>
+                            <span class="product-card__price-old">$6.50</span>
+                        </div>
+                        <p class="product-card__note">Get 20% Off in App</p>
+                    </article>
+
+                    <article class="product-card product-card--sale">
+                        <div class="product-card__badge">Sale</div>
+                        <img src="../img/menu-1.jpg" alt="Ristretto Bianco" class="product-card__image">
+                        <h3 class="product-card__name">RISTRETTO BIANCO</h3>
+                        <p class="product-card__tagline">Only at Cafe and Delivery</p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$5.00</span>
+                            <span class="product-card__price-old">$6.50</span>
+                        </div>
+                        <p class="product-card__note">Get 20% Off in App</p>
+                    </article>
+
+                    <article class="product-card product-card--sale">
+                        <div class="product-card__badge">Sale</div>
+                        <img src="../img/menu-1.jpg" alt="Ristretto Bianco" class="product-card__image">
+                        <h3 class="product-card__name">RISTRETTO BIANCO</h3>
+                        <p class="product-card__tagline">Only at Cafe and Delivery</p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$5.00</span>
+                            <span class="product-card__price-old">$6.50</span>
+                        </div>
+                        <p class="product-card__note">Get 20% Off in App</p>
+                    </article>
+
+                    <article class="product-card product-card--sale">
+                        <div class="product-card__badge">Sale</div>
+                        <img src="../img/menu-1.jpg" alt="Ristretto Bianco" class="product-card__image">
+                        <h3 class="product-card__name">RISTRETTO BIANCO</h3>
+                        <p class="product-card__tagline">Only at Cafe and Delivery</p>
+                        <div class="product-card__price">
+                            <span class="product-card__price-current">$5.00</span>
+                            <span class="product-card__price-old">$6.50</span>
+                        </div>
+                        <p class="product-card__note">Get 20% Off in App</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+
+            <div class="location__bottom">
+                <div class="location__socials">
+                    <a href="#" class="location__social"><img src="../img/icons/spotify.svg" alt="Spotify"></a>
+                    <a href="#" class="location__social"><img src="../img/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="#" class="location__social"><img src="../img/icons/tiktok.svg" alt="TikTok"></a>
+                    <a href="#" class="location__social"><img src="../img/icons/youtube.svg" alt="YouTube"></a>
+                    <a href="#" class="location__social"><img src="../img/icons/twitter.svg" alt="Twitter"></a>
+                    <a href="#" class="location__social"><img src="../img/icons/telegram.svg" alt="Telegram"></a>
+                </div>
+
+                <div class="location__apps">
+                    <span class="location__delivery">Delivery Order</span>
+                    <div class="location__stores">
+                        <a href="#" class="location__store">
+                            <img src="../img/appstore.png" alt="App Store">
+                        </a>
+                        <a href="#" class="location__store">
+                            <img src="../img/googleplay.png" alt="Google Play">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bar">
+                <p class="footer__copy">© 2023 IMAJI COFFEE, All rights reserved</p>
+                <p class="footer__links">
+                    <a href="#">Terms and Conditions</a>
+                    <span class="footer__divider">|</span>
+                    <a href="#">Privacy Policy</a>
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+
+</body>
+
+</html>
