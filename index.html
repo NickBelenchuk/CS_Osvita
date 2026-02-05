@@ -80,21 +80,21 @@
                 <form class="filters__form" action="#" method="get">
                     <div class="filters__field filters__field--search">
                         <div class="filters__label-row">
-                            <label for="search" class="filters__label">Search</label>
-                            <button class="filters__clear" type="button">Clear</button>
+                            <label for="searchInput" class="filters__label">Search</label>
+                            <button class="filters__clear" data-clear="search" type="button">Clear</button>
                         </div>
 
                         <div class="filters__control filters__control--search">
                             <span class="filters__icon" aria-hidden="true">🔍</span>
-                            <input class="filters__input filters__input--text" type="text" id="searchInput" name="search"
-                                placeholder="Enter keyword" />
+                            <input class="filters__input filters__input--text" type="text" id="searchInput"
+                                name="search" placeholder="Enter keyword" />
                         </div>
                     </div>
 
                     <div class="filters__field filters__field--price">
                         <div class="filters__label-row">
-                            <label for="price" class="filters__label">Price</label>
-                            <button class="filters__clear filters__clear--active" type="button">Clear</button>
+                            <label for="priceSelect" class="filters__label">Price</label>
+                            <button class="filters__clear" data-clear="price" type="button">Clear</button>
                         </div>
 
                         <div class="filters__control">
@@ -109,8 +109,8 @@
 
                     <div class="filters__field filters__field--sort">
                         <div class="filters__label-row">
-                            <label for="sort" class="filters__label">Sort By</label>
-                            <button class="filters__clear filters__clear--active" type="button">Clear</button>
+                            <label for="sortSelect" class="filters__label">Sort By</label>
+                            <button class="filters__clear" data-clear="sort" type="button">Clear</button>
                         </div>
 
                         <div class="filters__control">
@@ -122,7 +122,6 @@
                             </select>
                         </div>
                     </div>
-
                 </form>
             </div>
             <div class="container filters__categories" aria-label="Menu categories">
